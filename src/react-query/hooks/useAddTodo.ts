@@ -1,7 +1,7 @@
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import axios from "axios";
 import { Todo } from "./useTodos";
-import { CACHE_KEY_TODOS } from "../constant";
+import { CACHE_KEY_TODOS } from "../constants/constant";
 
 const useAddTodo = (onAdd: () => void) => {
     const queryClient = useQueryClient();
